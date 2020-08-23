@@ -1,0 +1,1 @@
+Repo for this blog post: https://medium.com/@bernhardjt/authorization-edge-with-keycloak-30b6873d27e3
