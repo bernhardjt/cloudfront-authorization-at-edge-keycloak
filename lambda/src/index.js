@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken'); // tested with "^8.5.1" //  npm install jso
 /*
 This script is checking the header "Authorization" and the cookie "SSOToken" for a valide jwt (access_token).
 If the token is valide and satisfies the criteria of issuer_url, client_name and allow_algorithms, the request will permit.
-Unauthorized user get and "content" and "/login.js".
+Unauthorized user get the "content" and "/login.js".
 */
 
 const publicKEY = `
