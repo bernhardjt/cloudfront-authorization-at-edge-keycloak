@@ -3,13 +3,13 @@ const ipd_url = "https://login.example.com";
 const realm = "realmexample";
 
 if (window.location.hash) {
-    console.log("hash url")
+    //console.log("hash url")
     var lochash = window.location.hash.substr(1),
-        mylocation = lochash.substr(lochash.search(/(?<=^|&)access_token=/))
+        mylocation = lochash.substr(lochash.search(/access_token=/))
         .split('&')[0]
         .split('=')[1];
     if (mylocation) {
-        console.log(mylocation);
+        //console.log(mylocation);
         document.cookie = `SSOToken=${mylocation};path=/`;
         location.reload();
     }
